@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.71">
+<head>
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+<style type="text/css">
+@import url(../nps.css);
+</style>
+
+ <title>Unstable homotopy groups of spheres</title>
+</head>
+<body>
+
+<h1>Unstable homotopy groups of spheres</h1>
+
+From the <a href='#files'>bottom</a> of this page you can download
+Mathematica programs that know many results about the unstable
+homotopy groups of spheres up to the 19-stem.  Most of the information
+is taken from Toda's book "Composition methods in homotopy groups of
+spheres"; a few additional facts are proved in an accompanying note or
+quoted from elsewhere.  The program does not do any serious
+calculations for itself, it is merely a convenient way of organizing
+and accessing results obtained by traditional methods.  One can also
+do some automated consistency checking to detect any errors.  I have
+tried to use a fairly general framework so that other computations in
+unstable homotopy can be included later if people are interested.
+<br><br>
+This program is not really finished, but I think it is already useful,
+and I have moved on to other things, so I have decided to release it.  
+
+<div class="p"><!----></div>
+Here are some examples of things one can type, and the program's
+response:
+
+<div class="p"><!----></div>
+<br /><br /><tt>SpherePi[14,2]</tt>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ <b>Z</b><sub>2</sub>&#951;<sub>5</sub>&#176;&#949;<sub>6</sub>&#8853;<b>Z</b><sub>2</sub>&#956;<sub>5</sub>&#8853;<b>Z</b><sub>2</sub>&#957;<sub>5</sub>&#176;&#957;<sub>8</sub>&#176;&#957;<sub>11</sub></td></tr></table>
+</td></tr></table>
+
+
+<tt>HomotopySet[Sphere[7],Sphere[4]]</tt>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ <b>Z</b>&#957;<sub>4</sub>&#8853;<b>Z</b><sub>4</sub>&#957;&#8242;</td></tr></table>
+</td></tr></table>
+
+
+<tt>GroupType[SpherePi[19,10]]</tt>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ <b>Z</b><sub>2</sub>&#8853;<b>Z</b><sub>2</sub>&#8853;<b>Z</b><sub>2</sub>&#8853;<b>Z</b></td></tr></table>
+</td></tr></table>
+
+
+<tt>ShowMap[Hopf,8,4]</tt>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#960;<sub>8</sub><sup>4</sup> </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#8594; </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#960;<sub>8</sub><sup>7</sup> </td></tr></table></td></tr>
+<tr><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+<b>Z</b><sub>2</sub>&#957;<sub>4</sub>&#176;&#951;<sub>7</sub>&#8853;<b>Z</b><sub>2</sub>(&#931;&#957;&#8242;)&#176;&#951;<sub>7</sub> </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+</td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+<b>Z</b><sub>2</sub>&#951;<sub>7</sub> </td></tr></table></td></tr>
+<tr><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#957;<sub>4</sub>&#176;&#951;<sub>7</sub> </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#8594; </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#951;<sub>7</sub> </td></tr></table></td></tr>
+<tr><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+(&#931;&#957;&#8242;)&#176;&#951;<sub>7</sub> </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#8594; </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+0  </td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+<tt>ShowMap[Sigma,To[sigmaprime]]</tt>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#960;<sub>13</sub><sup>6</sup> </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#8594; </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#960;<sub>14</sub><sup>7</sup> </td></tr></table></td></tr>
+<tr><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+<b>Z</b><sub>4</sub>&#963;" </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+</td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+<b>Z</b><sub>8</sub>&#963;&#8242;</td></tr></table></td></tr>
+<tr><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#963;" </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#8594; </td></tr></table></td><td align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+2 &#963;&#8242; </td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+<tt>Explain[o[nuprime,nu[7]]]</tt>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ </td><td nowrap="nowrap" align="center">
+<table>
+<tr><td><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+&#957;&#8242;&#176;&#957;<sub>7</sub> &#8594; 0 </td></tr></table></td></tr>
+<tr><td><table border="0" cellspacing="0" cellpadding="0"><tr><td nowrap="nowrap" align="center">
+ <span class="roman">This</span> <span class="roman">takes</span> <span class="roman">place</span> <span class="roman">in</span> <span class="roman">the</span> <span class="roman">trivial</span> <span class="roman">group</span> &#960;<sub><span class="roman">10</span></sub><span class="roman">S</span><sup><span class="roman">3</span></sup> - <span class="roman">see</span> <span class="roman">Toda</span>&#8242;<span class="roman">s</span> <span class="roman">Proposition</span> <span class="roman">5</span><span class="roman">.</span><span class="roman">15</span>  </td></tr></table></td></tr></table>
+</td><td nowrap="nowrap" align="center">
+</td></tr></table>
+</td></tr></table>
+
+
+<h2><a name='files'>Files</a></h2>
+
+To use the program:
+<ul>
+ <li>Download at least the files Toda.m and TeXToMath.m, and save them
+  in a directory (say /home/neil/toda).
+ </li>
+ <li>Start up Mathematica, then enter
+  <tt>SetDirectory[&quot;/home/neil/toda&quot;]</tt> (or equivalent).
+ </li>
+ <li>Enter <tt>&lt;&lt;Toda.m<tt> to read in the program.
+ </li>
+ <li>You can now enter questions using the syntax described in 
+  <a href='toda.pdf'>Toda.pdf</a>
+ </li>
+</ul>
+
+Here are the files:
+<ul>
+ <li><a href='toda.pdf'>Toda.pdf</a> - more detailed documentation</li>
+ <li><a href='Toda.m'>Toda.m</a> - the core of the program</li>
+ <li><a href='TeXToMath.m'>TeXToMath.m</a> - used by Toda.m to convert
+  help messages from LaTeX to Mathematica encoding.  (This is rather
+  crude, and will only handle a limited range of LaTeX constructs.)
+ </li>
+ <li><a href='LambdaAlgebra.m'>LambdaAlgebra.m</a> - definitions 
+  related to the lambda algebra, including lambda algebra
+  representatives for some of Toda's generators.  This program can
+  calculate the cohomology of the lambda algebra, but it uses a very
+  naive and inefficient algorithm, and takes a ridiculous amount of
+  space to represent the result.
+ </li>
+ <li><a href='TodaChecks.m'>TodaChecks.m</a> - some auxiliary
+  functions for checking the completeness and consistency of the
+  results encoded in Toda.m.  (There are currently numerous failures
+  of completeness, but none of consistency.)
+ </li>
+ <li><a href='LambdaData.m'>LambdaData.m</a> - 10MB of data on bases
+  for the lambda algebra that put the differential in canonical form.
+  You probably do not want or need to download this file.
+ </li>
+</ul>
+
+</body>
+</html>
