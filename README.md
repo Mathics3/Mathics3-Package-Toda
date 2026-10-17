@@ -54,12 +54,15 @@ $$\nu'^\circ\nu_7 \to 0$$
 
 ## Using
 
+The code currently works on Mathics3 10.0.2dev0 or later. Once that is installed:
+
 ```console
 $ git clone https://github.com/Mathics3/Mathics3-Packages-Toda toda
 $ cd toda
 $ mathics3
-<<Toda.m
+<<Toda.m  (* This takes several minutes to load. To see loading progress use: Get["Toda.m", Trace->True] *)
 ```
+
 
 ## Files
 
