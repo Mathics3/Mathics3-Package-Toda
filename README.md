@@ -1,6 +1,6 @@
 # Unstable homotopy groups of spheres
 
-This repository contains Mathematica programs you can download that know many results about the unstable homotopy groups of spheres up to the 19-stem. Most of the information is taken from Toda's book *"Composition methods in homotopy groups of spheres"*; a few additional facts are proved in an accompanying note or quoted from elsewhere. The program does not do any serious calculations for itself; it is merely a convenient way of organizing and accessing results obtained by traditional methods. One can also do some automated consistency checking to detect any errors. I have tried to use a fairly general framework so that other computations in unstable homotopy can be included later if people are interested.
+This repository contains Mathematica programs you can download that know many results about the unstable homotopy groups of spheres up to the 19-stem. Most of the information is taken from Hiroshi Toda's book "Composition methods in homotopy groups of spheres [1]. A few additional facts are proved in an accompanying note or quoted from elsewhere. The program does not do any serious calculations for itself; it is merely a convenient way of organizing and accessing results obtained by traditional methods. One can also do some automated consistency checking to detect any errors. I have tried to use a fairly general framework so that other computations in unstable homotopy can be included later if people are interested.
 
 
 This program is not really finished, but I (Neil P Strickland) think it is already useful, and I have moved on to other things, so I have decided to release it.
@@ -75,3 +75,7 @@ Here are the files:
 ## See also
 
 [https://strickland1.org/toda/](https://strickland1.org/toda/)
+
+## References
+
+[1] H. Toda, *Composition methods in homotopy groups of spheres*, Princeton University Press, Annals of Mathematics Studies (No. 49), 1962, 193 pp. ISBN: 978-069109586.
