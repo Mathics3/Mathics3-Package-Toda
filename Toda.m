@@ -16,9 +16,9 @@ Group::usage =
   "\\(a_i\\).  The value \\(d_i\\)=Infinity is allowed."
  ]]
 CyclicFormat[{x_, Infinity}] :=
-  SequenceForm[\[DoubleStruckCapitalZ\], x]
+  SequenceForm[\[DoubleStruckCapitalZ], x]
 CyclicFormat[{x_, n_Integer}] :=
-  SequenceForm[Subscript[\(\[DoubleStruckCapitalZ\]\),n], x]
+  SequenceForm[Subscript[\(\[DoubleStruckCapitalZ]\),n], x]
 Format[Group[]]    = 0
 Format[Group[C_]] := CyclicFormat[C]
 Format[A_Group]   := CyclicFormat /@ (CirclePlus @@ A) /; Length[A] > 1
@@ -883,7 +883,7 @@ TodaBracketRepresentation[sigmathird] =
 Indeterminacy[sigmathird] = {}
 
 DeclareElement[
- sigmasecond,\[\Sigma]'',13,6,
+ sigmasecond,\[Sigma]'',13,6,
  StringJoin[
   "\\(\\sigma'':S^{13}\\rightarrow S^6\\) is characterised by the properties ",
   "\\(H(\\sigma'')=\\eta_{11}^2\\) and \\(\\Sigma^3\\sigma''=4\\sigma_9\\). ",
@@ -897,7 +897,7 @@ DeclareElement[
 Indeterminacy[sigmasecond] = {}
 
 DeclareElement[
- sigmaprime,\[\Sigma]',14,7,
+ sigmaprime,\[Sigma]',14,7,
  StringJoin[
   "\\(\\sigma':S^{14}\\rightarrow S^7\\) is characterised by the properties ",
   "\\(H(\\sigma')=\\eta_{13}\\) and \\(\\Sigma^2\\sigma'=2\\sigma_9\\). ",
