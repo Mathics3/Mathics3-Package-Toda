@@ -60,7 +60,7 @@ The code currently works on Mathics3 10.0.2dev0 or later. Once that is installed
 $ git clone https://github.com/Mathics3/Mathics3-Packages-Toda toda
 $ cd toda
 $ mathics3
-<<Toda.m  (* This takes several minutes to load. To see loading progress use: Get["Toda.m", Trace->True] *)
+<<Toda.wl  (* This takes several minutes to load. To see loading progress use: Get["Toda.wl", Trace->True] *)
 ```
 
 
@@ -68,11 +68,11 @@ $ mathics3
 
 Here are the files:
 * [Toda.pdf](toda.pdf) - more detailed documentation
-* [Toda.m](Toda.m) - the core of the program
-* [TeXToMath.m](TeXToMath.m) - used by Toda.m to convert help messages from LaTeX to Mathematica encoding. (This is rather crude, and will only handle a limited range of LaTeX constructs.)
-* [LambdaAlgebra.m](LambdaAlgebra.m) - definitions related to the lambda algebra, including lambda algebra representatives for some of Toda's generators. This program can calculate the cohomology of the lambda algebra, but it uses a very naive and inefficient algorithm, and takes a ridiculous amount of space to represent the result.
-* [TodaChecks.m](TodaChecks.m) - some auxiliary functions for checking the completeness and consistency of the results encoded in Toda.m. (There are currently numerous failures of completeness, but none of consistency.)
-* [LambdaData.m](LambdaData.m) - 10MB of data on bases for the lambda algebra that put the differential in canonical form. You probably do not want or need to download this file.
+* [Toda.wl](Toda.wl) - the core of the program
+* [TeXToMath.wl](TeXToMath.wl) - used by Toda.wl to convert help messages from LaTeX to Mathematica encoding. (This is rather crude, and will only handle a limited range of LaTeX constructs.)
+* [LambdaAlgebra.wl](LambdaAlgebra.wl) - definitions related to the lambda algebra, including lambda algebra representatives for some of Toda's generators. This program can calculate the cohomology of the lambda algebra, but it uses a very naive and inefficient algorithm, and takes a ridiculous amount of space to represent the result.
+* [TodaChecks.wl](TodaChecks.wl) - some auxiliary functions for checking the completeness and consistency of the results encoded in `Toda.wl`. (There are currently numerous failures of completeness, but none of consistency.)
+* [LambdaData.wl](LambdaData.wl) - 10MB of data on bases for the lambda algebra that put the differential in canonical form. You probably do not want or need to download this file.
 
 
 ## See also
