@@ -9,7 +9,7 @@
  td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
  td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
  td div.norm {line-height:normal;}
- span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;}
  span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
  span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
 
@@ -36,7 +36,7 @@ tried to use a fairly general framework so that other computations in
 unstable homotopy can be included later if people are interested.
 <br><br>
 This program is not really finished, but I think it is already useful,
-and I have moved on to other things, so I have decided to release it.  
+and I have moved on to other things, so I have decided to release it.
 
 <div class="p"><!----></div>
 Here are some examples of things one can type, and the program's
@@ -136,15 +136,15 @@ response:
 
 To use the program:
 <ul>
- <li>Download at least the files Toda.m and TeXToMath.m, and save them
+ <li>Download at least the files Toda.wl and TeXToMath.wl, and save them
   in a directory (say /home/neil/toda).
  </li>
  <li>Start up Mathematica, then enter
   <tt>SetDirectory[&quot;/home/neil/toda&quot;]</tt> (or equivalent).
  </li>
- <li>Enter <tt>&lt;&lt;Toda.m<tt> to read in the program.
+ <li>Enter <tt>&lt;&lt;Toda.wl<tt> to read in the program.
  </li>
- <li>You can now enter questions using the syntax described in 
+ <li>You can now enter questions using the syntax described in
   <a href='toda.pdf'>Toda.pdf</a>
  </li>
 </ul>
@@ -152,24 +152,24 @@ To use the program:
 Here are the files:
 <ul>
  <li><a href='toda.pdf'>Toda.pdf</a> - more detailed documentation</li>
- <li><a href='Toda.m'>Toda.m</a> - the core of the program</li>
- <li><a href='TeXToMath.m'>TeXToMath.m</a> - used by Toda.m to convert
+ <li><a href='Toda.m'>Toda.wl</a> - the core of the program</li>
+ <li><a href='TeXToMath.m'>TeXToMath.wl</a> - used by Toda.m to convert
   help messages from LaTeX to Mathematica encoding.  (This is rather
   crude, and will only handle a limited range of LaTeX constructs.)
  </li>
- <li><a href='LambdaAlgebra.m'>LambdaAlgebra.m</a> - definitions 
+ <li><a href='LambdaAlgebra.wl'>LambdaAlgebra.wl</a> - definitions
   related to the lambda algebra, including lambda algebra
   representatives for some of Toda's generators.  This program can
   calculate the cohomology of the lambda algebra, but it uses a very
   naive and inefficient algorithm, and takes a ridiculous amount of
   space to represent the result.
  </li>
- <li><a href='TodaChecks.m'>TodaChecks.m</a> - some auxiliary
+ <li><a href='TodaChecks.wl'>TodaChecks.wl</a> - some auxiliary
   functions for checking the completeness and consistency of the
   results encoded in Toda.m.  (There are currently numerous failures
   of completeness, but none of consistency.)
  </li>
- <li><a href='LambdaData.m'>LambdaData.m</a> - 10MB of data on bases
+ <li><a href='LambdaData.m'>LambdaData.wl</a> - 10MB of data on bases
   for the lambda algebra that put the differential in canonical form.
   You probably do not want or need to download this file.
  </li>
